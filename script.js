@@ -13,7 +13,7 @@
 //
 // Para diagnosticar problemas abre la página con  ?debug  al final de la URL
 // (ej. index.html?debug). Para ver los datos de ejemplo usa  ?demo
-const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1TPK694JhWh5yymzI517DzSfoh-S8OQ7w-FhtFPYNBLM/edit?usp=sharing';
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQDxEfO7eUiDJj-Iia6CUfeWLtdz3w3UOOVg43QsqHSVVEz-IzcuRh9yPkgg6bXl0JeHlIqQON11-VE/pub?gid=0&single=true&output=csv';
 
 // true: los productos agotados se muestran con la etiqueta "Agotado".
 // false: se ocultan por completo.
