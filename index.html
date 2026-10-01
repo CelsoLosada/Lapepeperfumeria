@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esencia SJM · Catálogo</title>
+<meta name="description" content="Perfumes originales e inspirados en San Juan de los Morros. Mira el catálogo y consulta disponibilidad por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Esencia SJM · Catálogo de perfumes">
+<meta property="og:description" content="Perfumes originales e inspirados en San Juan de los Morros. Consulta disponibilidad por WhatsApp.">
+<!-- Cuando la página esté publicada, añade: <meta property="og:image" content="https://TU-DOMINIO/img/portada.jpg"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%239A4A5C'/%3E%3Ctext x='50' y='66' font-size='56' text-anchor='middle' fill='white' font-family='serif'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark">E</div>
+      <span class="brand-name">Esencia SJM</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre-nosotros">Nosotros</a>
+    </nav>
+    <a class="wa-btn" href="https://wa.me/584120000000?text=Hola%2C%20quiero%20info%20sobre%20los%20perfumes" target="_blank" aria-label="Escríbenos por WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.62 0-3.14-.45-4.44-1.23l-.32-.19-3 .79.8-2.92-.2-.3A7.94 7.94 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+      <span class="wa-btn-text">Escríbenos</span>
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="hero-eyebrow">Perfumería en San Juan de los Morros</div>
+    <h1>Aromas que sí encuentras en tu ciudad.</h1>
+    <p>Perfumes originales y alternativas inspiradas, seleccionadas una por una. Pregunta disponibilidad y coordina tu entrega directo por WhatsApp.</p>
+    <div class="hero-actions">
+      <a class="wa-btn" href="https://wa.me/584120000000" target="_blank">Ver disponibilidad</a>
+      <a class="hero-secondary" href="#catalogo">Ver catálogo</a>
+    </div>
+  </div>
+  <div class="hero-visual" role="img" aria-label="Fotografía de producto pendiente"></div>
+</section>
+
+<div class="controls" id="catalogo">
+  <div class="tabs">
+    <button class="tab active" data-tab="todos" aria-pressed="true">Todos</button>
+    <button class="tab" data-tab="original" aria-pressed="false">Originales</button>
+    <button class="tab" data-tab="inspirado" aria-pressed="false">Inspirados</button>
+  </div>
+  <div class="family-filter">
+    <button class="chip active" data-family="todas" aria-pressed="true">Todas las familias</button>
+    <button class="chip" data-family="floral" aria-pressed="false">Floral</button>
+    <button class="chip" data-family="amaderado" aria-pressed="false">Amaderado</button>
+    <button class="chip" data-family="citrico" aria-pressed="false">Cítrico</button>
+    <button class="chip" data-family="dulce" aria-pressed="false">Dulce</button>
+  </div>
+</div>
+
+<div id="demo-banner"></div>
+
+<div class="search-wrap">
+  <input class="search-input" id="search" type="search" aria-label="Buscar en el catálogo" placeholder="Buscar por nombre, referencia o nota (ej. vainilla, Nº12, amaderado)">
+  <div class="result-count" id="result-count"></div>
+</div>
+
+<div class="grid" id="grid"></div>
+<div class="load-more-wrap" id="load-more-wrap"></div>
+
+<section class="about" id="sobre-nosotros">
+  <div class="about-img" role="img" aria-label="Foto del punto de venta o de la emprendedora, pendiente"></div>
+  <div>
+    <h2>Sobre Esencia SJM</h2>
+    <p>Un espacio pequeño que empezó por gusto propio a los perfumes y hoy atiende pedidos en toda la ciudad. Cada referencia se prueba antes de ofrecerse, para asegurar que la fijación y el aroma valgan la pena.</p>
+    <div class="about-meta">
+      <div><strong>Zona de entrega</strong>San Juan de los Morros y alrededores</div>
+      <div><strong>Horario</strong>Lunes a sábado, 9am – 6pm</div>
+      <div><strong>Pedidos</strong>Solo por WhatsApp</div>
+    </div>
+  </div>
+</section>
+
+<footer id="contacto">
+  <div class="footer-inner">
+    <div>Esencia SJM · San Juan de los Morros, Guárico</div>
+    <div>WhatsApp: +58 412 000 0000 · Instagram: @esenciasjm</div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
